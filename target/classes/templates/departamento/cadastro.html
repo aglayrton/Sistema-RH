@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html layout:decorate="~{layout}">
+<head><meta charset="UTF-8"/></head>
+<body>
+	
+	    <section class="layout-content" layout:fragment="corpo">
+	
+	        <nav class="navbar navbar-expand-md bg-light">
+	            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+	                <ul class="navbar-nav mr-auto">
+	                    <li class="nav-item active">
+	                        <i class="oi oi-caret-right"></i>
+	                        <span>Cadastrar Departamentos</span>
+	                    </li>
+	                </ul>
+	                <a class="btn btn-primary btn-md" href="/departamentos/listar" role="button">
+	                    <span class="oi oi-spreadsheet" title="Listar" aria-hidden="true"></span>
+	                    <span>Listar Departamentos</span>
+	                </a>
+	            </div>
+	        </nav>
+	
+	        <div class="container" id="cadastro">
+	        
+	        	<div th:replace="fragments/alert"></div>
+	        	<!-- th:action nos fornece com o contexto da aplicação, vai mandar para o RequestMapping/PostMapping -->
+	            <form th:action="${departamento.id == null} ? @{/departamentos/salvar} : @{/departamentos/editar}" 
+	            th:object="${departamento}" method="POST"><!-- th:object ela é responsável por enviar o objeto com os dados  -->
+	               	
+	               	<div th:replace="fragments/validacao :: validacao"></div>
+	               	
+	                <div class="form-row">
+	                    <div class="form-group col-md-6">
+	                        <label for="nome">Departamento</label>
+	                        <input type="text" class="form-control" id="nome"
+	                               placeholder="Nome Departamento" autofocus="autofocus" th:field="*{nome}"/>
+	                               <!-- th:field é o nome do atributo que esta vinculado com o objeto  -->
+	                    </div>
+	                </div>
+	                <input type="hidden" id="id" th:field="*{id}"/><!-- nessa caso vai ficar registrado um código caso seja editar -->
+	                <button type="submit" class="btn btn-primary btn-sm">Salvar</button>
+	            </form>
+	        </div>
+	    </section>
+</body>
+</html>

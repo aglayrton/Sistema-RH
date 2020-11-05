@@ -12,7 +12,7 @@ Você pode fazer download e upar para o spring tools.
 
 # Como rodar
 
-Você pode upar para o spring tools e também upar o sql o sgbd, daí é só roda,
+Você pode upar para o spring tools e também upar o sql no sgbd(mysql), daí é só roda,
 caso seja necessário fazer configurações de banco, não esqueça de ir no properties.
-Você também pode rodar ele via JAR, pelo terminal. Basta rodar o demo-mvc-1 que se encontrar
-no diretório target
+Você também pode rodar o programa web via JAR, pelo terminal. Basta rodar o demo-mvc-1 que se encontrar
+no diretório target.

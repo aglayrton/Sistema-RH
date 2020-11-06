@@ -1,6 +1,6 @@
-#Sistema para Recursos Humanos
+# Sistema para Recursos Humanos
 
-#Tecnologias:
+# Tecnologias:
 >Spring boot,
 >Spring MVC,
 >Thymeleaf,

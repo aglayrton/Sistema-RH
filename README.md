@@ -1,4 +1,4 @@
-# sistema-rh-spring
+# Sistema para Recursos Humanos
 
 Usei as tecnologias:
 >Spring boot,

@@ -12,9 +12,14 @@
 Você pode fazer FORK do projeto e importar para sua IDE.
 
 ## Como rodar
-Você pode fazer FORK do projeto e importar para sua IDE, ativar a execução de um banco de dados, 
-caso seja necessário modifique as configurações de banco (caso você use outro, neste usei o MySql) no properties.
-Você também pode rodar o programa web via JAR, pelo terminal. Basta rodar o demo-mvc-1 que se encontrar
+1º Você pode fazer FORK do projeto e importar para sua IDE;
+2º Ative a execução de um banco de dados; 
+3º Verifique o arquivo properties no projeto;
+4º Rode o projeto na sua IDE (Aconselho o Spring Tools);
+5º Acesse em seu navegador a URI: http://localhost:8080
+
+Obs: Caso seja necessário modifique as configurações de banco (caso você use outro, neste usei o MySql)...
+Você também pode rodar o programa web via JAR, pelo terminal. Basta rodar o demo-mvc-1 que se encontra
 no diretório target.
 
 
